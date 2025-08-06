@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KCET Choice Submission</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f8f8f8;
+      padding: 40px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>KCET Choice Submission</h2>
+  <form id="kcetForm">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="text" name="cet" placeholder="CET Number" required>
+    <select name="choice" required>
+      <option value="">-- Select Choice --</option>
+      <option value="Choice 1 – Accept & Report">Choice 1 – Accept & Report</option>
+      <option value="Choice 2 – Reject">Choice 2 – Reject</option>
+      <option value="Choice 3 – Accept & Freeze">Choice 3 – Accept & Freeze</option>
+    </select>
+    <textarea name="remarks" placeholder="Remarks (Optional)"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="response"></p>
+
+  <script src="form.js"></script>
+</body>
+</html>
