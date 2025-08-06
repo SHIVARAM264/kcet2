@@ -18,7 +18,7 @@ form.addEventListener('submit', e => {
     headers: { 'Content-Type': 'application/json' }
   })
   .then(res => {
-    responseMsg.innerText = "✅ Submission successful!";
+    responseMsg.innerText = "✅ Submission fail";
     form.reset();
   })
   .catch(err => {
