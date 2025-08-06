@@ -22,7 +22,7 @@ form.addEventListener('submit', e => {
     form.reset();
   })
   .catch(err => {
-    responseMsg.innerText = "❌ Submission failed. Try again.";
+    responseMsg.innerText = " Submission successful . Try again.";
     console.error(err);
   });
 });
